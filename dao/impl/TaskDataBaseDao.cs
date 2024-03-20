@@ -15,6 +15,7 @@ namespace WinFormsApp1.dao.impl
         SqlConnection _connection = DBConnection.GetInstance().GetConnection();
         public TasksEntity DeleteTask(TasksEntity task)
         {
+
             throw new NotImplementedException();
         }
 
