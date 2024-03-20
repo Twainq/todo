@@ -20,7 +20,11 @@ namespace WinFormsApp1
                 user = new BaseSecurity().auth(user);
                 Tasks f2 = new Tasks();
                 Hide();
-                f2.Show();
+                
+                if (f2.ShowDialog() == DialogResult.Cancel)
+                {
+                     Show();
+                }
             }
             catch (Exception ex)
             {

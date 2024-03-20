@@ -20,7 +20,7 @@ namespace WinFormsApp1.entity
             _login = login;
             _password = password;
         }
-        long getId() { return _id; }
+        public long getId() { return _id; }
         public string getName() { return _name; }
         public string getLogin() { return _login; }
         public string getPassword() { return _password; }

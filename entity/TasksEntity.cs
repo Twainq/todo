@@ -15,6 +15,7 @@ namespace WinFormsApp1.entity
         DateTime _time_start;
         DateTime _time_stop;
 
+        public TasksEntity() { }
         public TasksEntity(long id, long userid, string nameT, string st, DateTime timrstart, DateTime timrstop)
         {
             _id = id;
@@ -31,5 +32,6 @@ namespace WinFormsApp1.entity
         public string Status { get { return _status; } }
         public DateTime timestart { get { return _time_start; } set { _time_start = value; } }
         public DateTime timestop { get { return _time_stop; } set { _time_stop = value; } }
+
     }
 }
